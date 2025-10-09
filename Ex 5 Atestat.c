@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int puncte(char *cuv, int n) {
     printf("%s", cuv);
@@ -11,8 +12,8 @@ int main() {
     
     char cuvant[40] = "buna";
     char *c = cuvant;
-    
-    puncte(c, 16);
+    int lungime = strlen(cuvant);
+    puncte(c, lungime);
 
     return 0;
 }
